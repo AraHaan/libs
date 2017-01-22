@@ -1,0 +1,54 @@
+/*
+	hexstream
+
+	Header & Implementation for the hexstream class.
+*/
+/*
+The MIT License (MIT)
+
+Copyright (c) 2017 AraHaan
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+*/
+/*
+	These two header files that deals with the full implementation
+	and definition of the hexstream class I would really love and like
+	if it was to drop into the normal C++ standard library. However since
+	I code for free and have litteralyl no money nor job nor college education
+	on things like C++ I basically been coding much on my own. But hey this is
+	good for doing it all mostly on my own. I did have some people overlook some
+	of this code though that know C++ to ask for their inputs on this. Who knows
+	many Hex editors could benefit from this instead of having to write their own
+	hexstream or something the similar themselves and who knows it might speed up
+	some a little as well. Imagine hex editors like MadEdit being made portable to
+	linux and Windows at the same time. Also this header should compile for any
+	versions of C++ that has both the iomanip and stream headers
+*/
+
+#ifndef HEXSTREAM_DEFINED
+#define HEXSTREAM_DEFINED
+#include "basic_hexstream"
+
+namespace AraHaan {
+	class hexstream: public AraHaan::basic_hexstream {
+	};
+}
+
+#endif
+
